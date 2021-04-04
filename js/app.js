@@ -59,5 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  //    undraw tetromino
+  function undraw() {
+    current.forEach((index) => {
+      squares[currentPosition + index].classList.remove("tetromino");
+    });
+  }
+
   draw();
 });
