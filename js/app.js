@@ -151,16 +151,20 @@ document.addEventListener("DOMContentLoaded", () => {
   function rotate() {
     undraw();
     currentRotation++;
+
     if (currentRotation === current.length) {
       currentRotation = 0;
     }
-    nextCurrent = theTetrominoes[random][currentRotation];
+
+    // check future tetromino and rotate
+    const nextCurrent = theTetrominoes[random][currentRotation];
     const isAtLeftEdge = nextCurrent.some(
       (index) => (currentPosition + index) % width === 0
     );
     const isAtRightEdge = nextCurrent.some(
       (index) => (currentPosition + index) % width === width - 1
     );
+
     if (isAtRightEdge && isAtLeftEdge) {
       console.log("can't rotate");
     } else {
