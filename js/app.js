@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       draw();
       timerId = setInterval(moveDown, 1000);
-      nextRandom = Math.floor(Math.random() * theTetrominoes.length);
+      //   nextRandom = Math.floor(Math.random() * theTetrominoes.length);
       displayShape();
     }
   });
