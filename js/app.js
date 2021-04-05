@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let nextRandom = 0;
   let timerId;
   let score = 0;
-  const colors = ["orange", "red", "purple", "green", "blue"];
+  const colors = [
+    "url(../img/yellow_block.png)",
+    "url(../img/green_block.png)",
+    "url(../img/purple_block.png)",
+    "url(../img/navy_block.png)",
+    "url(../img/peach_block.png)",
+  ];
 
   //   the tetrominoes
   const lTetromino = [
@@ -60,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function draw() {
     current.forEach((index) => {
       squares[currentPosition + index].classList.add("tetromino");
-      squares[currentPosition + index].style.backgroundColor = colors[random];
+      squares[currentPosition + index].style.backgroundImage = colors[random];
     });
   }
 
@@ -68,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function undraw() {
     current.forEach((index) => {
       squares[currentPosition + index].classList.remove("tetromino");
-      squares[currentPosition + index].style.backgroundColor = "";
+      squares[currentPosition + index].style.backgroundImage = "none";
     });
   }
 
@@ -119,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
       gameOver();
     }
   }
+  freeze();
 
   //   move the tetromino left, unless is at edge or there is a blockage
   function moveLeft() {
@@ -198,12 +205,12 @@ document.addEventListener("DOMContentLoaded", () => {
     //   remove any trace of a tetromino form the entire grid
     displaySquares.forEach((square) => {
       square.classList.remove("tetromino");
-      square.style.backgroundColor = "";
+      square.style.backgroundImage = "none";
     });
 
     upNextTetrominoes[nextRandom].forEach((index) => {
       displaySquares[displayIndex + index].classList.add("tetromino");
-      displaySquares[displayIndex + index].style.backgroundColor =
+      displaySquares[displayIndex + index].style.backgroundImage =
         colors[nextRandom];
     });
   }
@@ -241,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
         row.forEach((index) => {
           squares[index].classList.remove("taken");
           squares[index].classList.remove("tetromino");
-          squares[index].style.backgroundColor = "";
+          squares[index].style.backgroundImage = "none";
         });
         const squaresRemoved = squares.splice(i, width);
         squares = squaresRemoved.concat(squares);
