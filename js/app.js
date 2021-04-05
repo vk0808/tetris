@@ -220,13 +220,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (timerId) {
       clearInterval(timerId);
       timerId = null;
+      startBtn.innerHTML = "start";
     } else {
       draw();
       timerId = setInterval(moveDown, 1000);
+      startBtn.innerHTML = "pause";
       //   nextRandom = Math.floor(Math.random() * theTetrominoes.length);
       displayShape();
     }
   });
+
   //   add score
   function addScore() {
     for (let i = 0; i < 199; i += width) {
