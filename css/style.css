@@ -163,4 +163,20 @@ body {
   width: 20px;
   height: 20px;
 }
+
+footer {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 2rem;
+  color: whitesmoke;
+  text-align: center;
+  opacity: 0.65;
+}
+
+footer a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: orange;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
