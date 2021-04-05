@@ -3,33 +3,55 @@
   padding: 0;
   margin: 0;
 }
-
-.container {
-  display: flex;
+body {
+  height: 100vh;
+  background: rgb(29, 48, 84);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 41, 112, 0.85) 0%,
+    rgba(29, 48, 84, 1) 100%
+  );
 }
+.game {
+  margin-top: 2rem;
 
-.grid {
-  width: 200px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-
-  .cell {
-    height: 20px;
-    width: 20px;
-    border: 1px groove rgba(255, 255, 255, 0.7);
+  .title {
+    color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
   }
-}
 
-.mini-grid {
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  flex-wrap: wrap;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
 
-  div {
-    width: 20px;
-    height: 20px;
+    .cell {
+      height: 20px;
+      width: 20px;
+      border: 1px groove rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
