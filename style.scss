@@ -96,16 +96,38 @@ body {
     }
   }
 
-  .mini-grid {
+  .up-next {
+    width: 150px;
+    height: 200px;
     margin-left: 50px;
-    width: 80px;
-    height: 80px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    align-items: center;
+    background: #2b3c5e;
+    border-radius: 0.5rem;
 
-    div {
-      width: 20px;
-      height: 20px;
+    p {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: whitesmoke;
+      text-transform: capitalize;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.15rem;
+    }
+
+    .mini-grid {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
