@@ -27,6 +27,30 @@ body {
   letter-spacing: 0.15rem;
 }
 
+.game .title #yellow {
+  color: yellow;
+}
+
+.game .title #purple {
+  color: purple;
+}
+
+.game .title #green {
+  color: lightgreen;
+}
+
+.game .title #navy {
+  color: blueviolet;
+}
+
+.game .title #peach {
+  color: greenyellow;
+}
+
+.game .title #pink {
+  color: #b33d50;
+}
+
 .game .detail {
   display: -webkit-box;
   display: -ms-flexbox;
