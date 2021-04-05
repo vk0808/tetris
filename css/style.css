@@ -157,6 +157,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 .game .up-next .mini-grid div {
