@@ -6,10 +6,7 @@
 }
 
 body {
-  height: 100vh;
   background: #1d3054;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 41, 112, 0.85)), to(#1d3054));
-  background: linear-gradient(180deg, rgba(3, 41, 112, 0.85) 0%, #1d3054 100%);
 }
 
 .game {
@@ -28,6 +25,48 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   letter-spacing: 0.15rem;
+}
+
+.game .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .detail .score-info {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-top: 0.75rem;
+  color: whitesmoke;
+  letter-spacing: 0.1rem;
+}
+
+.game .detail .score-info #score {
+  margin-left: 1rem;
+  color: orange;
+  text-transform: capitalize;
+}
+
+.game .detail #start-button {
+  background: transparent;
+  padding: 0.5rem;
+  margin: 1rem 0 2rem 0;
+  color: whitesmoke;
+  letter-spacing: 0.15rem;
+  border: 1px solid orange;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+
+.game .detail #start-button:hover {
+  background-color: rgba(255, 165, 0, 0.7);
 }
 
 .game .container {
