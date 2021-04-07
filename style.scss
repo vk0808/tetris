@@ -89,11 +89,11 @@ body {
     }
   }
 
-  .up-next {
+  #up-next {
+    display: none;
     width: 150px;
     height: 200px;
     margin-left: 50px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.75rem;

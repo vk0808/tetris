@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const startBtn = document.querySelector("#start-button");
   const gameFinish = document.querySelector("#game-over");
   const scoreCard = document.querySelector("#score-card");
+  const upNext = document.querySelector("#up-next");
   const width = 10;
   let nextRandom = 0;
   let timerId;
@@ -219,6 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //   add functionality to button
   startBtn.addEventListener("click", () => {
+    upNext.style.display = "flex";
     if (timerId) {
       clearInterval(timerId);
       timerId = null;
