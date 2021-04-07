@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreDisplay = document.querySelector("#score");
   const startBtn = document.querySelector("#start-button");
   const gameFinish = document.querySelector("#game-over");
+  const scoreCard = document.querySelector("#score-card");
   const width = 10;
   let nextRandom = 0;
   let timerId;
@@ -268,6 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
         squares[currentPosition + index].classList.contains("taken")
       )
     ) {
+      scoreCard.innerHTML = score;
       scoreDisplay.innerHTML = "end";
       clearInterval(timerId);
       gameFinish.style.display = "block";

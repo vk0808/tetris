@@ -151,6 +151,8 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(2, 0, 36, 0.5);
+    color: whitesmoke;
+    text-transform: capitalize;
 
     div {
       height: 300px;
@@ -162,7 +164,15 @@ body {
         margin: 1rem;
         font-size: 2rem;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        text-transform: capitalize;
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+
+        #score-card {
+          color: orange;
+        }
       }
     }
   }
