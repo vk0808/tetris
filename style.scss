@@ -49,6 +49,14 @@ body {
     flex-direction: column;
     align-items: center;
 
+    .btns {
+      flex-direction: row;
+
+      #start-button {
+        margin-right: 1rem;
+      }
+    }
+
     .score-info {
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;

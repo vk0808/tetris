@@ -65,6 +65,17 @@ body {
           align-items: center;
 }
 
+.game .detail .btns {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game .detail .btns #start-button {
+  margin-right: 1rem;
+}
+
 .game .detail .score-info {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-top: 0.75rem;
