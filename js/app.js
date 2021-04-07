@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let squares = Array.from(document.querySelectorAll(".grid div"));
   const scoreDisplay = document.querySelector("#score");
   const startBtn = document.querySelector("#start-button");
+  const gameFinish = document.querySelector("#game-over");
   const width = 10;
   let nextRandom = 0;
   let timerId;
@@ -269,6 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       scoreDisplay.innerHTML = "end";
       clearInterval(timerId);
+      gameFinish.style.display = "block";
     }
   }
 });
