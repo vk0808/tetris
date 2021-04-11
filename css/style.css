@@ -114,10 +114,10 @@ body {
   border: 1px groove rgba(255, 255, 255, 0.2);
 }
 
-.game #up-next {
+.game #side-container {
   display: none;
   width: 150px;
-  height: 200px;
+  height: 300px;
   margin-left: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -134,16 +134,18 @@ body {
   border-radius: 0.5rem;
 }
 
-.game #up-next p {
+.game #side-container p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: whitesmoke;
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.15rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
 
-.game #up-next .mini-grid {
+.game #side-container #up-next .mini-grid {
   width: 80px;
   height: 80px;
   display: -webkit-box;
@@ -154,9 +156,24 @@ body {
   margin-left: 10px;
 }
 
-.game #up-next .mini-grid div {
+.game #side-container #up-next .mini-grid div {
   width: 20px;
   height: 20px;
+}
+
+.game #side-container .btn-container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4px;
+}
+
+.game #side-container .btn-container .btn {
+  margin: 0;
+  width: 35px;
 }
 
 #start-button,
