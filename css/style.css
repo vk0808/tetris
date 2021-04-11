@@ -146,8 +146,8 @@ body {
 }
 
 .game #side-container #up-next .mini-grid {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,8 +157,8 @@ body {
 }
 
 .game #side-container #up-next .mini-grid div {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .game #side-container .btn-container .top {
@@ -189,6 +189,14 @@ body {
   #side-container {
     width: 150px;
     margin-left: 40px !important;
+  }
+  #side-container #up-next .mini-grid {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  #side-container #up-next .mini-grid div {
+    width: 20px !important;
+    height: 20px !important;
   }
   .btn-container .btn {
     width: 35px !important;
