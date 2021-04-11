@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const gameFinish = document.querySelector("#game-over");
   const scoreCard = document.querySelector("#score-card");
   const upNext = document.querySelector("#side-container");
+  const up = document.querySelector("#up");
+  const left = document.querySelector("#left");
+  const down = document.querySelector("#down");
+  const right = document.querySelector("#right");
   const width = 10;
   let nextRandom = 0;
   let timerId;
@@ -251,4 +255,17 @@ document.addEventListener("DOMContentLoaded", () => {
       gameFinish.style.display = "block";
     }
   }
+  //  controls
+  up.addEventListener("click", (e) => {
+    rotate();
+  });
+  left.addEventListener("click", (e) => {
+    moveLeft();
+  });
+  down.addEventListener("click", (e) => {
+    moveDown();
+  });
+  right.addEventListener("click", (e) => {
+    moveRight();
+  });
 });
