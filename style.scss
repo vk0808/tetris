@@ -77,14 +77,14 @@ body {
     justify-content: center;
   }
   .grid {
-    width: 200px;
-    height: 400px;
+    width: 150px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
 
     .cell {
-      height: 20px;
-      width: 20px;
+      height: 15px;
+      width: 15px;
       border: 1px groove rgba(255, 255, 255, 0.2);
     }
   }
@@ -92,7 +92,7 @@ body {
   #side-container {
     display: none;
     height: 300px;
-    margin-left: 4px;
+    margin-left: 10px;
     padding: 4px;
     flex-direction: column;
     justify-content: center;
@@ -137,12 +137,22 @@ body {
 
       .btn {
         margin: 0;
-        width: 30px;
+        width: 35px;
+        height: 35px;
       }
     }
   }
 }
 @media screen and (min-width: 425px) {
+  .grid {
+    width: 200px !important;
+    height: 400px !important;
+
+    .cell {
+      height: 20px !important;
+      width: 20px !important;
+    }
+  }
   #side-container {
     width: 150px;
     margin-left: 40px !important;
