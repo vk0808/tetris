@@ -91,9 +91,9 @@ body {
 
   #side-container {
     display: none;
-    width: 150px;
     height: 300px;
-    margin-left: 50px;
+    margin-left: 4px;
+    padding: 4px;
     flex-direction: column;
     justify-content: center;
     gap: 0.75rem;
@@ -137,11 +137,22 @@ body {
 
       .btn {
         margin: 0;
-        width: 35px;
+        width: 30px;
       }
     }
   }
 }
+@media screen and (min-width: 425px) {
+  #side-container {
+    width: 150px;
+    margin-left: 40px !important;
+  }
+
+  .btn-container .btn {
+    width: 35px !important;
+  }
+}
+
 #start-button,
 .btn {
   background: transparent;
